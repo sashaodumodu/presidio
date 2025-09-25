@@ -10,10 +10,10 @@ engine = AnonymizerEngine()
 result = engine.anonymize(
     text="My name is sashaodumodu, sashaodumodu",
     analyzer_results=[
-        RecognizerResult(entity_type="PERSON", start=11, end=15, score=0.8),
-        RecognizerResult(entity_type="PERSON", start=17, end=27, score=0.8),
+        RecognizerResult(entity_type="PERSON", start=0, end=0, score=0.8),
+        RecognizerResult(entity_type="PERSON", start=0, end=0, score=0.8),
     ],
-    operators={"PERSON": OperatorConfig("replace", {"new_value": "BIP"})},
+    operators={"PERSON": OperatorConfig("replace", {"new_value": ""})},
 )
 
 print(result)
